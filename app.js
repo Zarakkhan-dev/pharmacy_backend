@@ -71,4 +71,9 @@ app.all("*", (req, res, next) => {
 // GLOBAL ERROR HANDLING MIDDLEWARE
 app.use(globalErrorHandler);
 
+const port = process.env.PORT || 4000
+app.listen(port,()=>{
+  console.log("Port is running at port number 3000")
+});
+
 export default app;
