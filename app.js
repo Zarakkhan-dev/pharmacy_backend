@@ -59,7 +59,7 @@ app.use("/api/subscribers", subscriber );
 
 
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Ships Pharmacy  API is Running");
 });
 
